@@ -17,11 +17,11 @@ Timeline and milestones for project.
       * Finalize hardware decisions - 3/12/09
       * Record data via Bluetooth - 3/12/09
       * Draw entire breadboard w/Software - 3/12/09
-      * Setup breadboard (3/13/09)
-         * Talk to George about getting a PCB
 
    * Week 7
       * Do homework for other classes (3/15/09)
+      * Setup breadboard (3/16/09)
+         * Talk to George about getting a PCB
       * CAD drawings for stand(3/16/09)
       * PCB drawings sent in (3/16/09)
       * All materials for stand (3/17/09)
