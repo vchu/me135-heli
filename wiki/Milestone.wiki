@@ -15,6 +15,7 @@ Timeline and milestones for project.
       * Make milestone - 3/12/09
          * DONE
       * Finalize hardware decisions - 3/12/09
+         * DONE
       * Record data via Bluetooth - 3/12/09
       * Draw entire breadboard w/Software - 3/12/09
 
@@ -23,9 +24,12 @@ Timeline and milestones for project.
       * Setup breadboard (3/16/09)
          * Talk to George about getting a PCB
       * CAD drawings for stand(3/16/09)
+         * DONE
       * PCB drawings sent in (3/16/09)
       * All materials for stand (3/17/09)
+         * DONE
       * Start machine shop (3/18/09) - 8am
+         * DONE - stand is completely machine shopped and assembled
       * Sensor readings - send and put into luminary (3/19/09)
       * Final flight prep - possibly flying (3/19/09)  
       * Stand done (3/20/09)
