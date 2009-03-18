@@ -21,15 +21,15 @@ Timeline and milestones for project.
 
    * Week 7
       * Do homework for other classes (3/15/09)
-      * Setup breadboard (3/16/09)
-         * Talk to George about getting a PCB
       * CAD drawings for stand(3/16/09)
          * DONE
-      * PCB drawings sent in (3/16/09)
       * All materials for stand (3/17/09)
          * DONE
       * Start machine shop (3/18/09) - 8am
          * DONE - stand is completely machine shopped and assembled
+      * Setup breadboard (3/19/09)
+         * Talk to George about getting a PCB
+      * PCB drawings sent in (3/20/09)
       * Sensor readings - send and put into luminary (3/19/09)
       * Final flight prep - possibly flying (3/19/09)  
       * Stand done (3/20/09)
