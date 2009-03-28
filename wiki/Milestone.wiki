@@ -16,11 +16,11 @@ Timeline and milestones for project.
          * DONE
       * Finalize hardware decisions - 3/12/09
          * DONE
-      * Record data via Bluetooth - 3/12/09
+      * Be able to record data via Bluetooth - 3/12/09
+         * DONE (3/27/09)
       * Draw entire breadboard w/Software - 3/12/09
 
    * Week 7
-      * Do homework for other classes (3/15/09)
       * CAD drawings for stand(3/16/09)
          * DONE
       * All materials for stand (3/17/09)
@@ -33,6 +33,7 @@ Timeline and milestones for project.
       * Sensor readings - send and put into luminary (3/19/09)
       * Final flight prep - possibly flying (3/19/09)  
       * Stand done (3/20/09)
+         * DONE (except for Cone to stabilize helicopter on lift off)
 
    * Week 6 - Spring Break - research! (3/21/09-3/29/09)
       * Mixing - Matrix to convert servo inputs to controller inputs
