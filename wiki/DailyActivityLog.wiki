@@ -8,9 +8,14 @@
     * The spinning in the helicopter wound up the string in test stand, making it difficult for vertical movement—keep in mind while flying
     * Friction between the floor and the test stand is too great to allow movement—need to install wheels into the test stand.
   * Continuing to work on real-time bluetooth implementation.
+  * Also got high current power supply to test helicopter without chaining 5 different dc power supplies to get enough current
 
 ==4/2/09==
 Figured out how to make local variables :)
+
+==3/31/09==
+  * temporary mixing/unmixing matrix has been assembled
+  * working on sending more data through blue-tooth, real time. Still needs work
 
 ==3/27/09==
   * Vivian met with Trung to work on sending data through bluetooth.
@@ -27,7 +32,7 @@ Everybody should be working on their part of research as written on the mileston
   * Extended Kalman filter 
     * Keaton, Vivian 
 
-==3/18/09==
+==3/17-18/09==
   *  finished designing, drawing, and machining the test stand.
   * tested flight of helicopter with the test stand, but alas!
     * DISASTER! Either the li-po battery or charger is broken—battery won’t charge. Will contact helicopter people about possible replacements/fixing
@@ -40,10 +45,15 @@ Everybody should be working on their part of research as written on the mileston
   * starting to design PCB board for circuit. We want to have a board that will fit snug-ly into the luminary board. Will also include pins for Arduino, IMU, rangefinder, xbee for radio, power, filters, gps, and compass
     * need to figure out how to connect certain parts (microcontrollers, etc) through the serial connections, before completing pcb layout
 
-==3/9/09==
+==3/7/09==
   * Started reading signals from the accelerometer through the luminary board – very choppy signals
   * built filters for these signals—low pass filter that only allows signals < ~50 hz through
     * much nicer data with filters!
+  * also we need more ADC , finding alternatives (ie mux, additional microcontroller)
+  * VI for seeing data stopped working after a while, even after computer resets... need to talk to mentors about it.
+
+_edit: apparently we were running the VI in debugging mode, which is why is stopped working_
+
 
 ==2/24/09==
   * Had a giant meeting with lots of mentors: Nimbus, George, Wenchao
