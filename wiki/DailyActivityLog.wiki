@@ -12,6 +12,38 @@
 ==4/2/09==
 Figured out how to make local variables :)
 
+==3/27/09==
+  * Vivian met with Trung to work on sending data through bluetooth.
+  * success! Bluetooth is working!
+
+==Spring Break==
+Everybody should be working on their part of research as written on the milestone page, that is
+  * Mixing - Matrix to convert servo inputs to controller inputs 
+    *Terry, Emily 
+  * Control Scheme - start with PID(Feedback system) and dynamics model 
+    * Keaton, Vivian, Jason 
+  * Interface with GPS - waypoints/google earth - magnetometer 
+    * Jason, Emily, Terry 
+  * Extended Kalman filter 
+    * Keaton, Vivian 
+
+==3/18/09==
+  *  finished designing, drawing, and machining the test stand.
+  * tested flight of helicopter with the test stand, but alas!
+    * DISASTER! Either the li-po battery or charger is broken—battery won’t charge. Will contact helicopter people about possible replacements/fixing
+    * might need to add cone to test stand for stabilizing the helicopter when not landed.
+
+==3/12/09==
+  * made milestones for the project to plan out remaining weeks – find it on our wiki!
+  * Finalized hardware decisions
+  * starting to use bluetooth to record data, having difficulties getting VI to work
+  * starting to design PCB board for circuit. We want to have a board that will fit snug-ly into the luminary board. Will also include pins for Arduino, IMU, rangefinder, xbee for radio, power, filters, gps, and compass
+    * need to figure out how to connect certain parts (microcontrollers, etc) through the serial connections, before completing pcb layout
+
+==3/9/09==
+  * Started reading signals from the accelerometer through the luminary board – very choppy signals
+  * built filters for these signals—low pass filter that only allows signals < ~50 hz through
+    * much nicer data with filters!
 
 ==2/24/09==
   * Had a giant meeting with lots of mentors: Nimbus, George, Wenchao
