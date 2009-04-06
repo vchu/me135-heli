@@ -1,9 +1,40 @@
-#summary Daily Log
+#summary Project Progress
 
 = Daily Log =
 
-*4/5/09*
+==4/5/09==
   * Got the new charger in so we could fly the helicopter attached to the stand.
   * Helicopter needs more calibration (yaw servo)because the it keeps on spinning in circles to the right. Needs more manual trimming.
   * The spinning in the helicopter wound up the string in test stand, making it difficult for vertical movement—keep in mind while flying
   * Friction between the floor and the test stand is too great to allow movement—need to install wheels into the test stand.
+
+==4/2/09==
+Figured out how to make local variables :)
+
+==2/5/09==
+  * After some discussion after class, we have an updated goal—The helicopter will now have an on-board autopilot, IMU (sensors for acceleration, tilt, and rotation), camera, and DGPS.From the ground-based computer we will pick where we want the helicopter to go on a map.  The computer will calculate a path for the helicopter to follow.  Once we click 'GO' the helicopter will travel to the chosen destinations.  The on-board camera will allow it to avoid objects during its flight.
+    * that is--no aerobatic maneuvers
+    * Will need to get the larger helicopter
+    * need to change the microcontroller? And types of cameras?
+
+
+==2/3/09==
+Listing a few things to research
+  # type of control scheme (proportional?)
+  # signal conditioning (what types of filters are needed? effects?)
+  # power supply filters (needed for micro controller and sensors? sizes?)
+  # do we have enough digital/analog IO's?
+  # is bluetooth fast enough for video feed? type of camera?
+  # How do RC signals work? same as blue tooth?
+  # possible aerobatic maneuvers?
+
+==1/31/09==
+Finalizing/ordering parts list
+  # Arduino Pro Mini -- $20 http://www.sparkfun.com/commerce/product_info.php?products_id=8991
+  # Bluesmirf -- $65 http://www.sparkfun.com/commerce/product_info.php?products_id=582
+  # IMU 5 degrees of freedom -- $110 http://www.sparkfun.com/commerce/product_info.php?products_id=741
+  # Exceed G2 6-channel RC helicopter -- $165 http://www.xheli.com/dr39elrcrare.html
+
+other helicopter:
+
+Exceed Blueray 450 --$250 http://www.xheli.com/exrc2450sert.html
