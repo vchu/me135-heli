@@ -11,7 +11,9 @@
   * Also got high current power supply to test helicopter without chaining 5 different dc power supplies to get enough current
 
 ==4/2/09==
-Figured out how to make local variables :)
+  * Figured out how to make local variables :)
+  * Retested outputs of actual helicopter mixers -- found out collective control was NOT Linear, need to update mixing VI
+  * also servos work with a pwm at 50hz, but the hardware cannot support this. Trying to find alternatives and also talking to Trung about it.
 
 ==3/31/09==
   * temporary mixing/unmixing matrix has been assembled
@@ -20,6 +22,12 @@ Figured out how to make local variables :)
 ==3/27/09==
   * Vivian met with Trung to work on sending data through bluetooth.
   * success! Bluetooth is working!
+
+==3/25/09==
+  * Met with Trung at NI headquarters in Berkeley to talk about connections between components.
+    * Will be using I2C between arduino and Luminary, All sensors with UART will go to the Luminary. SPI for magnetometer. 
+    * clarified pins for ADC and digital IO's
+  * will temporarily hold off on making PCB board until the we get the actual Bread board worknig 
 
 ==Spring Break==
 Everybody should be working on their part of research as written on the milestone page, that is
