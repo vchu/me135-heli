@@ -1,13 +1,9 @@
-#summary One-sentence summary of this page.
+#summary Daily Log
 
-= Introduction =
+= Daily Log =
 
-Add your content here.
-
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+*4/5/09*
+  *Got the new charger in so we could fly the helicopter attached to the stand.
+  *Helicopter needs more calibration (yaw servo)because the it keeps on spinning in circles to the right. Needs more manual trimming.
+  *The spinning in the helicopter wound up the string in test stand, making it difficult for vertical movement—keep in mind while flying
+  *Friction between the floor and the test stand is too great to allow movement—need to install wheels into the test stand.
