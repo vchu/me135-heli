@@ -4,18 +4,37 @@
 
 ==4/5/09==
   * Got the new charger in so we could fly the helicopter attached to the stand.
-  * Helicopter needs more calibration (yaw servo)because the it keeps on spinning in circles to the right. Needs more manual trimming.
-  * The spinning in the helicopter wound up the string in test stand, making it difficult for vertical movement—keep in mind while flying
-  * Friction between the floor and the test stand is too great to allow movement—need to install wheels into the test stand.
+    * Helicopter needs more calibration (yaw servo)because the it keeps on spinning in circles to the right. Needs more manual trimming.
+    * The spinning in the helicopter wound up the string in test stand, making it difficult for vertical movement—keep in mind while flying
+    * Friction between the floor and the test stand is too great to allow movement—need to install wheels into the test stand.
+  * Continuing to work on real-time bluetooth implementation.
 
 ==4/2/09==
 Figured out how to make local variables :)
+
+
+==2/24/09==
+  * Had a giant meeting with lots of mentors: Nimbus, George, Wenchao
+    * discussed current project, scope, parts, recording flight data, using the Kalman filter
+    * got to see Nimbus’s research lab – he is also working on rc helicopters but more for tracking helicopter movement with leds and cameras
+
+
+==2/16-17/09==
+  * possibility of competing in a UAV competition
+  * slides completed, presenting on the 17th
+
+==2/10/09==
+  * Finished final version of project proposal
+    * Group 8 is now SPARROW (Stable Pitch Aerobatics Research for Remotely Operated Whirlybird)
+  * Microcontrollers and IMU have been ordered
 
 ==2/5/09==
   * After some discussion after class, we have an updated goal—The helicopter will now have an on-board autopilot, IMU (sensors for acceleration, tilt, and rotation), camera, and DGPS.From the ground-based computer we will pick where we want the helicopter to go on a map.  The computer will calculate a path for the helicopter to follow.  Once we click 'GO' the helicopter will travel to the chosen destinations.  The on-board camera will allow it to avoid objects during its flight.
     * that is--no aerobatic maneuvers
     * Will need to get the larger helicopter
     * need to change the microcontroller? And types of cameras?
+  * Contacted Trung for help with project, camera and micro controller questions
+    * should NOT stream video on bluetooth, use separate method (ex. Wifi)
 
 
 ==2/3/09==
