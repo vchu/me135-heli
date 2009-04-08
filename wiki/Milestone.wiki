@@ -19,6 +19,7 @@ Timeline and milestones for project.
       * Be able to record data via Bluetooth - 3/12/09
          * DONE (3/27/09)
       * Draw entire breadboard w/Software - 3/12/09
+         * Going to be delayed (Will fly with breadboard for now)
 
    * Week 7
       * CAD drawings for stand(3/16/09)
@@ -31,9 +32,10 @@ Timeline and milestones for project.
          * Talk to George about getting a PCB
       * PCB drawings sent in (3/20/09)
       * Sensor readings - send and put into luminary (3/19/09)
+         * Non-real time done, still working on real-time to allow PID gain value changes
       * Final flight prep - possibly flying (3/19/09)  
       * Stand done (3/20/09)
-         * DONE (except for Cone to stabilize helicopter on lift off)
+         * DONE 
 
    * Week 6 - Spring Break - research! (3/21/09-3/29/09)
       * Mixing - Matrix to convert servo inputs to controller inputs
@@ -50,9 +52,11 @@ Timeline and milestones for project.
       * Mount PCB board again if didn't work - (3/31/09)
       * Email mentors to show up Thursday (3/31/09)
       * Mixing (3/31/09)
+         * Have a rough one done
       * Mixing Cont (4/1/09) - only if we didn't finish
       * Control (4/2/09) - start at 3:30pm
          * Remember to include failsafe
+         * Have a basic PID control implemented for a sloppy hover
       * Control Cont (4/4/09) possibly (4/5/09)
 
    * Week 4 - (4/6/09)
