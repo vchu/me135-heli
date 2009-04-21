@@ -5,6 +5,10 @@
 ==4/17/09==
   * tried to output pwm data from luminary board directly to one of the helicopter servos. Unfortunately, broke the gears in one of the servos!!! Will need to replace servo, and go to lab to check the pwm output again. perhaps the PWM's are too unsteady? looking into alternate methods to output pwm (use arduino instead)
 
+==4/16/09==
+  * worked on I2C, have some C- code working for the arduino 
+  * researched some (extended) kalman filtering.
+
 ==4/15/09==
   * Recalibrated pulsewidths to fit with servo data better.
 
@@ -15,6 +19,7 @@
   * Tried new method for outputting low frequency pwm (around 60 Hz, period of 17 ms) with 50% pwm. --> though getting a saw tooth signal through the oscilloscope
     * May be labiew problem. will try out using C-node to try to get better output later
   * Blue tooth is working real-time. Though stuck on trying to send back a PID value to the Luminary to have it change real-time. 
+
 
 ==4/5/09==
   * Got the new charger in so we could fly the helicopter attached to the stand.
