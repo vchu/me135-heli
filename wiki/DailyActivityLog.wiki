@@ -2,6 +2,15 @@
 
 = Daily Log =
 
+==4/22/09==
+  * testing pwm output from the arduino, (no more dealing with luminary!)
+    * works well so need to configure arduino receive data from luminary, also started configuring and testing i2c connection
+  * tested outputs with oscilloscope borrowed from ME department, which is not reliable and altogether stopped working!
+  * another revision of mixing--> putting limits on pwm outputs, to ensure reasonable values and to hopefully not break another servo.
+  
+
+
+
 ==4/17/09==
   * tried to output pwm data from luminary board directly to one of the helicopter servos. Unfortunately, broke the gears in one of the servos!!! Will need to replace servo, and go to lab to check the pwm output again on the oscilloscopes. Perhaps the PWM's are too unsteady? looking into alternate methods to output pwm (use arduino instead).  PCB layout updated and waiting for final tests on Wednesday before sending in.  Figuring out communication between magnetometer and Luminary via SPI.
 
