@@ -13,7 +13,7 @@
 
 ==4/28/09==
   * met with Hugo and Trung to go over code one more time
-    * problem is with the circuit! Wires between clock and something else on the luminary were shorting! --> need to clean up the circuit & also send in pcb asap.
+    * problem is with the circuit! shorting circuits and perhaps a common ground issue --> need to clean up the circuit & also send in pcb asap.
   * discussed possible use of a mux
 
 ==4/23/09==
