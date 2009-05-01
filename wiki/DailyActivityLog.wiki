@@ -5,6 +5,8 @@
 ==4/30/09==
   * sent in PCB board with Larry's help
   * connected servos to actual arduino. success! we have a video also
+  * ran into a problem with calibrating the physical servo.  We used labview debugging to actually compensate with software by adding directly to the servo that needed calibration
+  * Did PID calibration until finally the helicopter was able to hover on its own!
 
 ==4/29/09==
   * finalized, checked, and rechecked PCB board
