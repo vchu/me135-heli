@@ -2,13 +2,33 @@
 
 = Daily Log =
 
+==4/30/09==
+  * sent in PCB board with Larry's help
+  * connected servos to actual arduino. success! we have a video also
+
+==4/29/09==
+  * finalized, checked, and rechecked PCB board
+  * will send in tomorrow with Larry for weekend pcb board making
+  * got 2-way I2C to work. (was a problem with the order of reading and writing!)
+
+==4/28/09==
+  * met with Hugo and Trung to go over code one more time
+    * problem is with the circuit! Wires between clock and something else on the luminary were shorting! --> need to clean up the circuit & also send in pcb asap.
+  * discussed possible use of a mux
+
+==4/23/09==
+  * testing pwm output from rotating accelerometer.
+  * pwm seems to work for the first 8 seconds or so, extending to 30 seconds, if we do not shake the accelerometer. Checked circuit, rechecking code...
+
+<insert more missing days>
+
 ==4/22/09==
   * testing pwm output from the arduino, (no more dealing with luminary!)
     * works well so need to configure arduino receive data from luminary, also started configuring and testing i2c connection
   * tested outputs with oscilloscope borrowed from ME department, which is not reliable and altogether stopped working!
   * another revision of mixing--> putting limits on pwm outputs, to ensure reasonable values and to hopefully not break another servo.
   
-
+<insert missing days>
 
 
 ==4/17/09==
