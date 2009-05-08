@@ -2,6 +2,39 @@
 
 = Daily Log =
 
+==5/7/09==
+  
+  * got manual/autonomous switch to work today. BUT. Problem: when using the autonomous mode (kill switch = on) the motor no longer runs. We need to find a new switch.
+  * issues with the throttle today, when switching from automatic to manual mode, the throttle was at very high values. After troubleshooting the ESC (electronic speed control) fixed the problem by recalibrating the throttle.
+  * also spent time recalibrating the proportional control for the hover, to try to get a more flat hover. 
+
+==5/6/09==
+  * Today we began to implement a 'manual mode' the idea is to use the kill switch (cuts off motor pwm) on the rc controller to switch to the autonomous mode. When the kill switch is off we will control the helicopter manually. The signal will be read from the rc receiver by the arduino (using a pwm-measuring library), which will then send out the appropriate pwm signal to the servo. 
+  * The implementation did not work too well. Manual mode can be achieved only by physically unplugging the arduino from the luminary. 
+
+==5/5/09==
+  * PCB board came in today! We started mounting parts, however some errors were found already, so another PCB board needs to be ordered. Also, this pcb board relies on the use of I2C, which is currently not working.
+  * tested out parts of the pcb board. Range finder is not working--it has a range of <1ft any greater gives a very large output. The rangefinder is probably broken.
+  * decided to push ahead with the project with goals: integrate the rangefinder for a stable-height hover
+
+
+==5/1/09==
+
+  * Today we made leaps and bounds.  We went ahead and took or cleaned up circuitry and connected it to our servo on the actual helicopter.  His is it with one servo:
+  http://www.youtube.com/watch?v=ttVv4ZQFOAA
+
+  * Here it is with ALL the servos and obvious working mixing with the accelerometer
+  http://www.youtube.com/watch?v=TXIlGFXtJhE
+
+  * Next we took all the circuitry and mounted it to the helicopter base plate. Finally we connected the power supply to the motor, connected a long usb to the luminary.  We had a few odd flights with problems with calibration for both hardware and PID.  Here is a clip of a crazy PID so the flight is very off:
+  http://www.youtube.com/watch?v=1gBYJQk4FpI
+
+  * And of course FINALLY the last clip is after we finally figured out the correct calibration... our very first autonomous helicopter flight.  You can hear our surprise and amazement as it worked.  Our camera died right before the clip so sorry for the bleh quality of the video.  We also have another bleh quality video (cellphones..) that is much longer and shows keaton with NO HANDS on the controller and the helicopter still hovering :)  That will come later... and here it is.. FIRST AUTONOMOUS FLIGHT:
+  http://www.youtube.com/watch?v=hH0PWADZKW8
+
+
+
+
 ==4/30/09==
   * sent in PCB board with Larry's help
   * connected servos to actual arduino. success! we have a video also
