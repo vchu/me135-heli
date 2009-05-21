@@ -2,6 +2,20 @@
 
 = Daily Log =
 
+==5/11/09==
+  * replaced parts on helicopter. Test stand is at cory, so will need to recalibrate tomorrow with new equipment
+  * prepared for presentation.
+
+==5/10/09==
+  * More PID refinement. The helicopter is behaving well enough that we will go for extended testing. 
+  * Tested helicopter off of test stand in cory courtyard. First it was tied down with only rope, then it was allowed to fly free. It was decided when it was free that there was too much drift, so we needed a larger area to fly it in.
+  * Continued to the softball field in clark kerr. Could definitely see the test stand hover within a set radius. Ran the helicopter twice, on the third run, the landing was too hard and the blades of the rotor flexed down to dent the tail boom and break off the end stabilizer. Will need to replace some broken parts on the helicopter tomorrow.
+
+==5/8-9/09==
+  * More PID refinement. Also created control simulator to help find working values.
+  * For the base station, bluetooth crashes because of too much data. Will try to change the baud rate.
+
+
 ==5/7/09==
   
   * got manual/autonomous switch to work today. BUT. Problem: when using the autonomous mode (kill switch = on) the motor no longer runs. We need to find a new switch.
