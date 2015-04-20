@@ -1,0 +1,74 @@
+# Introduction #
+
+Timeline and milestones for project.
+
+# DEADLINE 5/11/09 #
+
+# Details #
+  * Week 9
+    * Read signals and build filters - 3/9/09
+      * DONE
+
+  * Week 8
+    * Make milestone - 3/12/09
+      * DONE
+    * Finalize hardware decisions - 3/12/09
+      * DONE
+    * Be able to record data via Bluetooth - 3/12/09
+      * DONE (3/27/09)
+    * Draw entire breadboard w/Software - 3/12/09
+      * Going to be delayed (Will fly with breadboard for now)
+
+  * Week 7
+    * CAD drawings for stand(3/16/09)
+      * DONE
+    * All materials for stand (3/17/09)
+      * DONE
+    * Start machine shop (3/18/09) - 8am
+      * DONE - stand is completely machine shopped and assembled
+    * Setup breadboard (3/19/09)
+      * Talk to George about getting a PCB
+    * PCB drawings sent in (3/20/09)
+    * Sensor readings - send and put into luminary (3/19/09)
+      * Non-real time done, still working on real-time to allow PID gain value changes
+    * Final flight prep - possibly flying (3/19/09)
+    * Stand done (3/20/09)
+      * DONE
+
+  * Week 6 - Spring Break - research! (3/21/09-3/29/09)
+    * Mixing - Matrix to convert servo inputs to controller inputs
+      * Terry, Emily
+    * Control Scheme - start with PID(Feedback system) and dynamics model
+      * Keaton, Vivian, Jason
+    * Interface with GPS - waypoints/google earth - magnetometer
+      * Jason, Emily, Terry
+    * Extended Kalman filter
+      * Keaton, Vivian
+    * Mount PCB Board (3/25/09) - evening
+
+  * Week 5
+    * Mount PCB board again if didn't work - (3/31/09)
+    * Email mentors to show up Thursday (3/31/09)
+    * Mixing (3/31/09)
+      * Have a rough one done
+    * Mixing Cont (4/1/09) - only if we didn't finish
+    * Control (4/2/09) - start at 3:30pm
+      * Remember to include failsafe
+      * Have a basic PID control implemented for a sloppy hover
+    * Control Cont (4/4/09) possibly (4/5/09)
+
+  * Week 4 - (4/6/09)
+    * Control cont
+    * Kalman Filter
+    * Localization with GPS
+    * GUI interface with labview
+
+  * Week 3 - (4/13/09)
+    * Control cont.
+    * Video
+    * If reliable hover - start waypoints
+
+  * Week 2 - (4/20/09)
+    * Buffer of 2 weeks - everything we don't get done goes here!
+
+# DEADLINE 5/11/09 #

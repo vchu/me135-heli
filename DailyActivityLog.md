@@ -1,0 +1,206 @@
+# Daily Log #
+
+## 5/11/09 ##
+  * replaced parts on helicopter. Test stand is at cory, so will need to recalibrate tomorrow with new equipment
+  * prepared for presentation.
+
+## 5/10/09 ##
+  * More PID refinement. The helicopter is behaving well enough that we will go for extended testing.
+  * Tested helicopter off of test stand in cory courtyard. First it was tied down with only rope, then it was allowed to fly free. It was decided when it was free that there was too much drift, so we needed a larger area to fly it in.
+  * Continued to the softball field in clark kerr. Could definitely see the test stand hover within a set radius. Ran the helicopter twice, on the third run, the landing was too hard and the blades of the rotor flexed down to dent the tail boom and break off the end stabilizer. Will need to replace some broken parts on the helicopter tomorrow.
+
+## 5/8-9/09 ##
+  * More PID refinement. Also created control simulator to help find working values.
+  * For the base station, bluetooth crashes because of too much data. Will try to change the baud rate.
+
+
+## 5/7/09 ##
+
+  * got manual/autonomous switch to work today. BUT. Problem: when using the autonomous mode (kill switch = on) the motor no longer runs. We need to find a new switch.
+  * issues with the throttle today, when switching from automatic to manual mode, the throttle was at very high values. After troubleshooting the ESC (electronic speed control) fixed the problem by recalibrating the throttle.
+  * also spent time recalibrating the proportional control for the hover, to try to get a more flat hover.
+
+## 5/6/09 ##
+  * Today we began to implement a 'manual mode' the idea is to use the kill switch (cuts off motor pwm) on the rc controller to switch to the autonomous mode. When the kill switch is off we will control the helicopter manually. The signal will be read from the rc receiver by the arduino (using a pwm-measuring library), which will then send out the appropriate pwm signal to the servo.
+  * The implementation did not work too well. Manual mode can be achieved only by physically unplugging the arduino from the luminary.
+
+## 5/5/09 ##
+  * PCB board came in today! We started mounting parts, however some errors were found already, so another PCB board needs to be ordered. Also, this pcb board relies on the use of I2C, which is currently not working.
+  * tested out parts of the pcb board. Range finder is not working--it has a range of <1ft any greater gives a very large output. The rangefinder is probably broken.
+  * decided to push ahead with the project with goals: integrate the rangefinder for a stable-height hover
+
+
+## 5/1/09 ##
+
+  * Today we made leaps and bounds.  We went ahead and took or cleaned up circuitry and connected it to our servo on the actual helicopter.  His is it with one servo:
+> http://www.youtube.com/watch?v=ttVv4ZQFOAA
+
+  * Here it is with ALL the servos and obvious working mixing with the accelerometer
+> http://www.youtube.com/watch?v=TXIlGFXtJhE
+
+  * Next we took all the circuitry and mounted it to the helicopter base plate. Finally we connected the power supply to the motor, connected a long usb to the luminary.  We had a few odd flights with problems with calibration for both hardware and PID.  Here is a clip of a crazy PID so the flight is very off:
+> http://www.youtube.com/watch?v=1gBYJQk4FpI
+
+  * And of course FINALLY the last clip is after we finally figured out the correct calibration... our very first autonomous helicopter flight.  You can hear our surprise and amazement as it worked.  Our camera died right before the clip so sorry for the bleh quality of the video.  We also have another bleh quality video (cellphones..) that is much longer and shows keaton with NO HANDS on the controller and the helicopter still hovering :)  That will come later... and here it is.. FIRST AUTONOMOUS FLIGHT:
+> http://www.youtube.com/watch?v=hH0PWADZKW8
+
+
+
+
+## 4/30/09 ##
+  * sent in PCB board with Larry's help
+  * connected servos to actual arduino. success! we have a video also
+  * ran into a problem with calibrating the physical servo.  We used labview debugging to actually compensate with software by adding directly to the servo that needed calibration
+  * Did PID calibration until finally the helicopter was able to hover on its own!
+
+## 4/29/09 ##
+  * finalized, checked, and rechecked PCB board
+  * will send in tomorrow with Larry for weekend pcb board making
+  * got 2-way I2C to work. (was a problem with the order of reading and writing!)
+
+## 4/28/09 ##
+  * met with Hugo and Trung to go over code one more time
+    * problem is with the circuit! shorting circuits and perhaps a common ground issue --> need to clean up the circuit & also send in pcb asap.
+  * discussed possible use of a mux
+
+## 4/23/09 ##
+  * testing pwm output from rotating accelerometer.
+  * pwm seems to work for the first 8 seconds or so, extending to 30 seconds, if we do not shake the accelerometer. Checked circuit, rechecking code...
+
+<insert more missing days>
+
+## 4/22/09 ##
+  * testing pwm output from the arduino, (no more dealing with luminary!)
+    * works well so need to configure arduino receive data from luminary, also started configuring and testing i2c connection
+  * tested outputs with oscilloscope borrowed from ME department, which is not reliable and altogether stopped working!
+  * another revision of mixing--> putting limits on pwm outputs, to ensure reasonable values and to hopefully not break another servo.
+
+<insert missing days>
+
+
+## 4/17/09 ##
+  * tried to output pwm data from luminary board directly to one of the helicopter servos. Unfortunately, broke the gears in one of the servos!!! Will need to replace servo, and go to lab to check the pwm output again on the oscilloscopes. Perhaps the PWM's are too unsteady? looking into alternate methods to output pwm (use arduino instead).  PCB layout updated and waiting for final tests on Wednesday before sending in.  Figuring out communication between magnetometer and Luminary via SPI.
+
+## 4/16/09 ##
+  * worked on I2C, have some C- code working for the arduino
+  * researched some (extended) kalman filtering.
+
+## 4/15/09 ##
+  * Recalibrated pulsewidths to fit with servo data better.
+
+## 4/10/09 ##
+  * Mixing vi won't compile on ARM projects. Rewrote vi to use formula-node in labview (which didn't work) then again to use the C-node, which works! edited vi a bit to output pulsewidths
+
+## 4/8/09 ##
+  * Tried new method for outputting low frequency pwm (around 60 Hz, period of 17 ms) with 50% pwm. --> though getting a saw tooth signal through the oscilloscope
+    * May be labiew problem. will try out using C-node to try to get better output later
+  * Blue tooth is working real-time. Though stuck on trying to send back a PID value to the Luminary to have it change real-time.
+
+## 4/7/09 ##
+  * developed new method for outputting low frequency pwm's through luminary digital outputs. Will be using the following Inputs:C4, C5, C6, C7, B0 and the Outputs: B1,B4,B5,B6, D6 on the luminary board.
+
+## 4/5/09 ##
+  * Got the new charger in so we could fly the helicopter attached to the stand.
+    * Helicopter needs more calibration (yaw servo)because the it keeps on spinning in circles to the right. Needs more manual trimming.
+    * The spinning in the helicopter wound up the string in test stand, making it difficult for vertical movement—keep in mind while flying
+    * Friction between the floor and the test stand is too great to allow movement—need to install wheels into the test stand.
+  * Continuing to work on real-time bluetooth implementation.
+  * Also got high current power supply to test helicopter without chaining 5 different dc power supplies to get enough current
+
+## 4/2/09 ##
+  * Figured out how to make local variables :)
+  * Retested outputs of actual helicopter mixers -- found out collective control was NOT Linear, need to update mixing VI
+  * also servos work with a pwm at 50hz, but the hardware cannot support this. Trying to find alternatives and also talking to Trung about it.
+
+## 3/31/09 ##
+  * temporary mixing/unmixing matrix has been assembled
+  * working on sending more data through blue-tooth, real time. Still needs work
+
+## 3/27/09 ##
+  * Vivian met with Trung to work on sending data through bluetooth.
+  * success! Bluetooth is working!
+
+## 3/25/09 ##
+  * Met with Trung at NI headquarters in Berkeley to talk about connections between components.
+    * Will be using I2C between arduino and Luminary, All sensors with UART will go to the Luminary. SPI for magnetometer.
+    * clarified pins for ADC and digital IO's
+  * will temporarily hold off on making PCB board until the we get the actual Bread board worknig
+
+## Spring Break ##
+Everybody should be working on their part of research as written on the milestone page, that is
+  * Mixing - Matrix to convert servo inputs to controller inputs
+    * erry, Emily
+  * Control Scheme - start with PID(Feedback system) and dynamics model
+    * Keaton, Vivian, Jason
+  * Interface with GPS - waypoints/google earth - magnetometer
+    * Jason, Emily, Terry
+  * Extended Kalman filter
+    * Keaton, Vivian
+
+## 3/17-18/09 ##
+  * finished designing, drawing, and machining the test stand.
+  * tested flight of helicopter with the test stand, but alas!
+    * DISASTER! Either the li-po battery or charger is broken—battery won’t charge. Will contact helicopter people about possible replacements/fixing
+    * might need to add cone to test stand for stabilizing the helicopter when not landed.
+
+## 3/12/09 ##
+  * made milestones for the project to plan out remaining weeks – find it on our wiki!
+  * Finalized hardware decisions
+  * starting to use bluetooth to record data, having difficulties getting VI to work
+  * starting to design PCB board for circuit. We want to have a board that will fit snug-ly into the luminary board. Will also include pins for Arduino, IMU, rangefinder, xbee for radio, power, filters, gps, and compass
+    * need to figure out how to connect certain parts (microcontrollers, etc) through the serial connections, before completing pcb layout
+
+## 3/7/09 ##
+  * Started reading signals from the accelerometer through the luminary board – very choppy signals
+  * built filters for these signals—low pass filter that only allows signals < ~50 hz through
+    * much nicer data with filters!
+  * also we need more ADC , finding alternatives (ie mux, additional microcontroller)
+  * VI for seeing data stopped working after a while, even after computer resets... need to talk to mentors about it.
+
+_edit: apparently we were running the VI in debugging mode, which is why is stopped working_
+
+
+## 2/24/09 ##
+  * Had a giant meeting with lots of mentors: Nimbus, George, Wenchao
+    * discussed current project, scope, parts, recording flight data, using the Kalman filter
+    * got to see Nimbus’s research lab – he is also working on rc helicopters but more for tracking helicopter movement with leds and cameras
+
+
+## 2/16-17/09 ##
+  * possibility of competing in a UAV competition
+  * slides completed, presenting on the 17th
+
+## 2/10/09 ##
+  * Finished final version of project proposal
+    * Group 8 is now SPARROW (Stable Pitch Aerobatics Research for Remotely Operated Whirlybird)
+  * Microcontrollers and IMU have been ordered
+
+## 2/5/09 ##
+  * After some discussion after class, we have an updated goal—The helicopter will now have an on-board autopilot, IMU (sensors for acceleration, tilt, and rotation), camera, and DGPS.From the ground-based computer we will pick where we want the helicopter to go on a map.  The computer will calculate a path for the helicopter to follow.  Once we click 'GO' the helicopter will travel to the chosen destinations.  The on-board camera will allow it to avoid objects during its flight.
+    * that is--no aerobatic maneuvers
+    * Will need to get the larger helicopter
+    * need to change the microcontroller? And types of cameras?
+  * Contacted Trung for help with project, camera and micro controller questions
+    * should NOT stream video on bluetooth, use separate method (ex. Wifi)
+
+
+## 2/3/09 ##
+Listing a few things to research
+  1. type of control scheme (proportional?)
+  1. signal conditioning (what types of filters are needed? effects?)
+  1. power supply filters (needed for micro controller and sensors? sizes?)
+  1. do we have enough digital/analog IO's?
+  1. is bluetooth fast enough for video feed? type of camera?
+  1. How do RC signals work? same as blue tooth?
+  1. possible aerobatic maneuvers?
+
+## 1/31/09 ##
+Finalizing/ordering parts list
+  1. Arduino Pro Mini -- $20 http://www.sparkfun.com/commerce/product_info.php?products_id=8991
+  1. Bluesmirf -- $65 http://www.sparkfun.com/commerce/product_info.php?products_id=582
+  1. IMU 5 degrees of freedom -- $110 http://www.sparkfun.com/commerce/product_info.php?products_id=741
+  1. Exceed G2 6-channel RC helicopter -- $165 http://www.xheli.com/dr39elrcrare.html
+
+other helicopter:
+
+Exceed Blueray 450 --$250 http://www.xheli.com/exrc2450sert.html
